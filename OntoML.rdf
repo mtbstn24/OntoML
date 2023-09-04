@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML/"
-     xml:base="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML/"
+<rdf:RDF xmlns="https://github.com/mtbstn24/OntoML"
+     xml:base="https://github.com/mtbstn24/OntoML"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:OntoML="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#"
-     xmlns:untitled-ontology-5="http://www.semanticweb.org/thushari/ontologies/2023/7/untitled-ontology-5#">
+     xmlns:OntoML="https://github.com/mtbstn24/OntoML#">
     <owl:Ontology rdf:about="https://github.com/mtbstn24/OntoML"/>
     
 
@@ -23,110 +22,110 @@
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#affectsPlantPart -->
+    <!-- https://github.com/mtbstn24/OntoML#affectsPlantPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#affectsPlantPart">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#affectsPlantPart">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Part"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasAffectedPlantPart -->
+    <!-- https://github.com/mtbstn24/OntoML#hasAffectedPlantPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasAffectedPlantPart">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasAffectedPlantPart">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Part"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasAffectedSeason -->
+    <!-- https://github.com/mtbstn24/OntoML#hasAffectedSeason -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasAffectedSeason">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Season"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasAffectedSeason">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Season"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasControlStage -->
+    <!-- https://github.com/mtbstn24/OntoML#hasControlStage -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasControlStage">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#DiseaseStage"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#ControlMeasure"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasControlStage">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#DiseaseStage"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#ControlMeasure"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasDisease -->
+    <!-- https://github.com/mtbstn24/OntoML#hasDisease -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasDisease">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Plant"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasDisease">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Plant"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasDiseaseColour -->
+    <!-- https://github.com/mtbstn24/OntoML#hasDiseaseColour -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasDiseaseColour">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasDiseaseColour">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Color"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasDiseaseStage -->
+    <!-- https://github.com/mtbstn24/OntoML#hasDiseaseStage -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasDiseaseStage">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#DiseaseStage"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasDiseaseStage">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#DiseaseStage"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasPlantPart -->
+    <!-- https://github.com/mtbstn24/OntoML#hasPlantPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasPlantPart">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Plant"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasPlantPart">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Plant"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Part"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasPlantStage -->
+    <!-- https://github.com/mtbstn24/OntoML#hasPlantStage -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasPlantStage">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#PlantStage"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasPlantStage">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#PlantStage"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasSymptom -->
+    <!-- https://github.com/mtbstn24/OntoML#hasSymptom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasSymptom">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasSymptom">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasSymptomColour -->
+    <!-- https://github.com/mtbstn24/OntoML#hasSymptomColour -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#hasSymptomColour">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#hasSymptomColour">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#Color"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#requiresControlMeasure -->
+    <!-- https://github.com/mtbstn24/OntoML#requiresControlMeasure -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#requiresControlMeasure">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#ControlMeasure"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoML#requiresControlMeasure">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoML#ControlMeasure"/>
     </owl:ObjectProperty>
     
 
@@ -142,57 +141,57 @@
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color -->
+    <!-- https://github.com/mtbstn24/OntoML#Color -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#Color"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#ControlMeasure -->
+    <!-- https://github.com/mtbstn24/OntoML#ControlMeasure -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#ControlMeasure"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#ControlMeasure"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease -->
+    <!-- https://github.com/mtbstn24/OntoML#Disease -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#Disease"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#DiseaseStage -->
+    <!-- https://github.com/mtbstn24/OntoML#DiseaseStage -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#DiseaseStage"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#DiseaseStage"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part -->
+    <!-- https://github.com/mtbstn24/OntoML#Part -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#Part"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Plant -->
+    <!-- https://github.com/mtbstn24/OntoML#Plant -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Plant"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#Plant"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#PlantStage -->
+    <!-- https://github.com/mtbstn24/OntoML#PlantStage -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#PlantStage"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#PlantStage"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Season -->
+    <!-- https://github.com/mtbstn24/OntoML#Season -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Season"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#Season"/>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom -->
+    <!-- https://github.com/mtbstn24/OntoML#Symptom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoML#Symptom"/>
     
 
 
@@ -207,370 +206,380 @@
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage -->
+    <!-- https://github.com/mtbstn24/OntoML#any_stage -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#PlantStage"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#any_stage">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#PlantStage"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#bacterial_spot -->
+    <!-- https://github.com/mtbstn24/OntoML#bacterial_spot -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#bacterial_spot">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit_halo"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#bacterial_spot">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#fruit_halo"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#spots"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#black -->
+    <!-- https://github.com/mtbstn24/OntoML#black -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#black">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#black">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Color"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#black_mold -->
+    <!-- https://github.com/mtbstn24/OntoML#black_mold -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#black_mold">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem_end_fruit"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#black"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#late_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#black_mold">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem_end_fruit"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#black"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#late_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#lesions"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown -->
+    <!-- https://github.com/mtbstn24/OntoML#brown -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#brown">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Color"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#curling -->
+    <!-- https://github.com/mtbstn24/OntoML#curling -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#curling">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#curling">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#early_blight -->
+    <!-- https://github.com/mtbstn24/OntoML#early_blight -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#early_blight">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#rings"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#early_blight">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#lesions"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#rings"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#first_fruit_set -->
+    <!-- https://github.com/mtbstn24/OntoML#first_fruit_set -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#first_fruit_set">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#PlantStage"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#first_fruit_set">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#PlantStage"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit -->
+    <!-- https://github.com/mtbstn24/OntoML#fruit -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#fruit">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Part"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit_halo -->
+    <!-- https://github.com/mtbstn24/OntoML#fruit_halo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit_halo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#fruit_halo">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fungal_growth -->
+    <!-- https://github.com/mtbstn24/OntoML#fungal_growth -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fungal_growth">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#fungal_growth">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#gray_spot -->
+    <!-- https://github.com/mtbstn24/OntoML#gray_spot -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#gray_spot">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Disease"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf_halo"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#gray_spot">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#leaf_halo"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#lesions"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#spots"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#late_blight -->
+    <!-- https://github.com/mtbstn24/OntoML#late_blight -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#late_blight">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fungal_growth"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#wilting"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#late_blight">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#fungal_growth"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#lesions"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#wilting"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#late_stage -->
+    <!-- https://github.com/mtbstn24/OntoML#late_stage -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#late_stage">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#PlantStage"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#late_stage">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#PlantStage"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf -->
+    <!-- https://github.com/mtbstn24/OntoML#leaf -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#leaf">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Part"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf_halo -->
+    <!-- https://github.com/mtbstn24/OntoML#leaf_halo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf_halo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#leaf_halo">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf_mold -->
+    <!-- https://github.com/mtbstn24/OntoML#leaf_mold -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf_mold">
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf_halo"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#leaf_mold">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#leaf_halo"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#lesions"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions -->
+    <!-- https://github.com/mtbstn24/OntoML#lesions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem_end_fruit"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#black"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#lesions">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem_end_fruit"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#black"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#mosaic_virus -->
+    <!-- https://github.com/mtbstn24/OntoML#mosaic_virus -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#mosaic_virus">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellowing"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#mosaic_virus">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#spots"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#yellowing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#potato -->
+    <!-- https://github.com/mtbstn24/OntoML#potato -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#potato">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Plant"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#potato">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Plant"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#powdery_mildew -->
+    <!-- https://github.com/mtbstn24/OntoML#powdery_mildew -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#powdery_mildew">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#white"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fungal_growth"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#powdery_mildew">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#white"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#fungal_growth"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#spots"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#rings -->
+    <!-- https://github.com/mtbstn24/OntoML#rings -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#rings">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#rings">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#septorial_leaf_stop -->
+    <!-- https://github.com/mtbstn24/OntoML#septorial_leaf_stop -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#septorial_leaf_stop">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#first_fruit_set"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#septorial_leaf_stop">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#first_fruit_set"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#spots"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spider_mites -->
+    <!-- https://github.com/mtbstn24/OntoML#spider_mites -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spider_mites">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellowing"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#spider_mites">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#yellowing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots -->
+    <!-- https://github.com/mtbstn24/OntoML#spots -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#white"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#spots">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#white"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem -->
+    <!-- https://github.com/mtbstn24/OntoML#stem -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#stem">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Part"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem_end_fruit -->
+    <!-- https://github.com/mtbstn24/OntoML#stem_end_fruit -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem_end_fruit">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Part"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#stem_end_fruit">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Part"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#target_spot -->
+    <!-- https://github.com/mtbstn24/OntoML#target_spot -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#target_spot">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#brown"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf_halo"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#lesions"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#rings"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#spots"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#target_spot">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#brown"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#leaf_halo"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#lesions"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#rings"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#spots"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#tomato -->
+    <!-- https://github.com/mtbstn24/OntoML#tomato -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#tomato">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Plant"/>
-        <OntoML:hasDisease rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#black_mold"/>
-        <OntoML:hasDisease rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#early_blight"/>
-        <OntoML:hasDisease rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#gray_spot"/>
-        <OntoML:hasDisease rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#late_blight"/>
-        <OntoML:hasDisease rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#mosaic_virus"/>
-        <OntoML:hasDisease rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#target_spot"/>
-        <OntoML:hasPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#fruit"/>
-        <OntoML:hasPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem"/>
-        <OntoML:hasPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#stem_end_fruit"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#tomato">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Plant"/>
+        <OntoML:hasDisease rdf:resource="https://github.com/mtbstn24/OntoML#black_mold"/>
+        <OntoML:hasDisease rdf:resource="https://github.com/mtbstn24/OntoML#early_blight"/>
+        <OntoML:hasDisease rdf:resource="https://github.com/mtbstn24/OntoML#gray_spot"/>
+        <OntoML:hasDisease rdf:resource="https://github.com/mtbstn24/OntoML#late_blight"/>
+        <OntoML:hasDisease rdf:resource="https://github.com/mtbstn24/OntoML#mosaic_virus"/>
+        <OntoML:hasDisease rdf:resource="https://github.com/mtbstn24/OntoML#target_spot"/>
+        <OntoML:hasPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#fruit"/>
+        <OntoML:hasPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem"/>
+        <OntoML:hasPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#stem_end_fruit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#white -->
+    <!-- https://github.com/mtbstn24/OntoML#white -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#white">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#white">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Color"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#wilting -->
+    <!-- https://github.com/mtbstn24/OntoML#wilting -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#wilting">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#wilting">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow -->
+    <!-- https://github.com/mtbstn24/OntoML#yellow -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Color"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#yellow">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Color"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow_leaf_curl -->
+    <!-- https://github.com/mtbstn24/OntoML#yellow_leaf_curl -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow_leaf_curl">
-        <OntoML:affectsPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasDiseaseColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
-        <OntoML:hasPlantStage rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#any_stage"/>
-        <OntoML:hasSymptom rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellowing"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#yellow_leaf_curl">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Disease"/>
+        <OntoML:affectsPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasDiseaseColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
+        <OntoML:hasPlantStage rdf:resource="https://github.com/mtbstn24/OntoML#any_stage"/>
+        <OntoML:hasSymptom rdf:resource="https://github.com/mtbstn24/OntoML#yellowing"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellowing -->
+    <!-- https://github.com/mtbstn24/OntoML#yellowing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellowing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#Symptom"/>
-        <OntoML:hasAffectedPlantPart rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#leaf"/>
-        <OntoML:hasSymptomColour rdf:resource="http://www.semanticweb.org/thushari/ontologies/2023/7/OntoML#yellow"/>
+    <owl:NamedIndividual rdf:about="https://github.com/mtbstn24/OntoML#yellowing">
+        <rdf:type rdf:resource="https://github.com/mtbstn24/OntoML#Symptom"/>
+        <OntoML:hasAffectedPlantPart rdf:resource="https://github.com/mtbstn24/OntoML#leaf"/>
+        <OntoML:hasSymptomColour rdf:resource="https://github.com/mtbstn24/OntoML#yellow"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
