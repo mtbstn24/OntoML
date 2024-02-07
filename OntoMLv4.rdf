@@ -1,0 +1,856 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/mtbstn24/OntoMLv4/"
+     xml:base="https://github.com/mtbstn24/OntoMLv4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/mtbstn24/OntoMLv4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#SymptomGroup -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#atPartPosition -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#atPartPosition">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomPosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#atPartStage -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#atPartStage">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#atPlantStage -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#atPlantStage">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#byPathogen -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#byPathogen">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#Pathogen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#hasSymptom">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#hasSymptomColor -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#onPlantPart -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#onPlantPart">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Bacteria -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Bacteria">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Pathogen"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Bacterial -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Bacterial">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#Bacteria"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PathogenDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Disease -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Disease">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Tomato"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Fungal -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Fungal">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#Fungi"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PathogenDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Fungi -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Fungi">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Pathogen"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#PartStage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Pathogen -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Pathogen"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#PathogenDiseases -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#PathogenDiseases"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#PlantPart -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#PlantStage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Symptom -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#SymptomColor -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#SymptomPosition -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#SymptomPosition"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Tomato -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Tomato"/>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Viral -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Viral">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#Virus"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PathogenDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#Virus -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#Virus">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Pathogen"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#bacteria_Ralstonia_solanacearum -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#bacteria_Ralstonia_solanacearum">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Bacteria"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#black -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#black">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#bronzing -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#bronzing">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#brown -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#brown">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#curling -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#curling">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#cut_end -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#cut_end">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#dropping -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#dropping">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#drying -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#drying">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#early_flowering_stage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#early_flowering_stage">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#first_fruit_set_stage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#first_fruit_set_stage">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#flower -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#flower">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fruit -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fruit">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fungal_growth -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fungal_growth">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fungi_Alternaria_solani -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fungi_Alternaria_solani">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Fungi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fungi_Colletotrichum_coccodes -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fungi_Colletotrichum_coccodes">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Fungi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fungi_Corynespora_cassiicola -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fungi_Corynespora_cassiicola">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Fungi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fungi_Oidium_lycopersicum -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fungi_Oidium_lycopersicum">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Fungi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fungi_Phytophthora_infestans -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fungi_Phytophthora_infestans">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Fungi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#fungi_Septoria_lycopersici -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#fungi_Septoria_lycopersici">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Fungi"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#green_fruit -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#green_fruit">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#grey -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#grey">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#halo -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#halo">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#immature_green_fruit -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#immature_green_fruit">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#late_stage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#late_stage">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#leaf -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#leaf">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#leaf_lower_surface -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#leaf_lower_surface">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#leaf_underside -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#leaf_underside">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#leaf_upper_surface -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#leaf_upper_surface">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#leaflets -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#leaflets">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#lower_leaf -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#lower_leaf">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#mature_green_fruit -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#mature_green_fruit">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#new_leaf -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#new_leaf">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#no_fruit_stage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#no_fruit_stage">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#older_leaf -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#older_leaf">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#ooze -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#ooze">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#plant -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#plant">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#post-emergence_phase -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#post-emergence_phase">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#pre-emergence_phase -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#pre-emergence_phase">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#red_stage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#red_stage">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#rings -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#rings">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#ripe_fruit -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#ripe_fruit">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#spots -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#spots">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#stem -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#stem">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#stem_crack -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#stem_crack">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#streak -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#streak">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#stunting -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#stunting">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_anthracnose -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_anthracnose">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_anthracnose_fruit_rot -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_anthracnose_fruit_rot">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_bacterial_canker -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_bacterial_canker">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_bacterial_spot -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_bacterial_spot">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_bacterial_wilt -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_bacterial_wilt">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_buckeye_rot -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_buckeye_rot">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_collar_rot -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_collar_rot">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_curly_top_virus -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_curly_top_virus">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_early_blight -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_early_blight">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#rings"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#fruit"/>
+                                    <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                                    <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#stem"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                        <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#rings"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                        <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                        <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#fruit"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#atPartStage"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#immature_green_fruit"/>
+                                            <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#red_stage"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#fungi_Alternaria_solani"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_fusarium_wilt -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_fusarium_wilt">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_late_blight -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_late_blight">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_mosaic_virus -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_mosaic_virus">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_powdery_mildew -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_powdery_mildew">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_septoria_leaf_spot -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_septoria_leaf_spot">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_spotted_wilt_virus -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_spotted_wilt_virus">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_target_spot -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_target_spot">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#tomato_yellow_leaf_curl_virus -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_yellow_leaf_curl_virus">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#white -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#white">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#wilting -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#wilting">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#yellow -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#yellow">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#yellowing -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#yellowing">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#young_leaf -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#young_leaf">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mtbstn24/OntoMLv4#young_plant_stage -->
+
+    <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#young_plant_stage">
+        <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantStage"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
