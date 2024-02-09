@@ -23,7 +23,9 @@
 
     <!-- https://github.com/mtbstn24/OntoMLv4#SymptomGroup -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#SymptomGroup">
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+    </owl:ObjectProperty>
     
 
 
@@ -39,7 +41,7 @@
     <!-- https://github.com/mtbstn24/OntoMLv4#atPartStage -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#atPartStage">
-        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
         <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#PartStage"/>
     </owl:ObjectProperty>
     
@@ -48,7 +50,7 @@
     <!-- https://github.com/mtbstn24/OntoMLv4#atPlantStage -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#atPlantStage">
-        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
         <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
     </owl:ObjectProperty>
     
@@ -75,7 +77,7 @@
     <!-- https://github.com/mtbstn24/OntoMLv4#hasSymptomColor -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor">
-        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
         <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomColor"/>
     </owl:ObjectProperty>
     
@@ -84,7 +86,7 @@
     <!-- https://github.com/mtbstn24/OntoMLv4#onPlantPart -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mtbstn24/OntoMLv4#onPlantPart">
-        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Symptom"/>
+        <rdfs:domain rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
         <rdfs:range rdf:resource="https://github.com/mtbstn24/OntoMLv4#PlantPart"/>
     </owl:ObjectProperty>
     
@@ -625,6 +627,85 @@
 
     <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_bacterial_spot">
         <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#atPartStage"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#green_fruit"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#spots"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#fruit"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#halo"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#yellow"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#spots"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#Bacteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -666,30 +747,50 @@
     <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_early_blight">
         <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
-                        <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#rings"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
-                        <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#fruit"/>
-                                    <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#leaf"/>
-                                    <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#stem"/>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#rings"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#rings"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#stem"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -759,6 +860,100 @@
 
     <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_mosaic_virus">
         <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#atPartStage"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#young_leaf"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#wilting"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#spots"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#yellow"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#fruit"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#stunting"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#plant"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#yellowing"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#yellow"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#Virus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -791,6 +986,127 @@
 
     <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_target_spot">
         <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#halo"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#yellow"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#rings"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#spots"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#fruit"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#spots"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#spots"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#brown"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#stem"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#fungi_Corynespora_cassiicola"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -799,6 +1115,107 @@
 
     <owl:Class rdf:about="https://github.com/mtbstn24/OntoMLv4#tomato_yellow_leaf_curl_virus">
         <rdfs:subClassOf rdf:resource="https://github.com/mtbstn24/OntoMLv4#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#atPartStage"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#new_leaf"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#yellowing"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptomColor"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#yellow"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#atPlantStage"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#early_flowering_stage"/>
+                                            <rdf:Description rdf:about="https://github.com/mtbstn24/OntoMLv4#no_fruit_stage"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#dropping"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#flower"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#curling"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#leaf"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#SymptomGroup"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#hasSymptom"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#stunting"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#onPlantPart"/>
+                                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#plant"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/mtbstn24/OntoMLv4#byPathogen"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/mtbstn24/OntoMLv4#Virus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
